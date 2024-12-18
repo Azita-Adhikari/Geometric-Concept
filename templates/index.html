@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric Shapes Drawer</title>
+    <script src="/static/shapes.js" defer></script>
+    <style>
+        canvas {
+            border: 1px solid black;
+            background-color: white;
+        }
+        .center {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <label for="shapes">Select a Shape:</label>
+        <select id="shapes">
+            <option value="Rectangle">Rectangle</option>
+            <option value="Circle">Circle</option>
+            <option value="Triangle">Triangle</option>
+            <option value="Square">Square</option>
+            <option value="Ellipse">Ellipse</option>
+        </select>
+        <button onclick="drawShape()">Draw Shape</button>
+    </div>
+    <div class="center">
+        <canvas id="shapeCanvas" width="300" height="300"></canvas>
+    </div>
+</body>
+</html>
